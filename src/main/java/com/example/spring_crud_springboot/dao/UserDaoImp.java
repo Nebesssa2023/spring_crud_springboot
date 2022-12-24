@@ -19,7 +19,7 @@ public class UserDaoImp implements UserDao {
     EntityManager entityManager;
 
     @Autowired
-    public UserDaoImp(@Qualifier("entityManager")EntityManager entityManager) {
+    public UserDaoImp(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
 
